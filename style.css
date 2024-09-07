@@ -1,0 +1,113 @@
+/* General body styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container for the resume */
+.container {
+  background-color: white;
+  max-width: 800px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px;
+}
+
+/* Section headers */
+h1,
+h2 {
+  color: #343a40;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* Personal info */
+#personal-info p {
+  font-size: 1rem;
+  color: #6c757d;
+  margin: 5px 0;
+}
+
+/* Section margins */
+section {
+  margin-top: 20px;
+}
+
+/* Skills list styling */
+#skills-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Style the delete button */
+#skills-list li button {
+  background-color: #dc3545; /* Red for delete */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Change the background color on hover */
+#skills-list li button:hover {
+  background-color: #c82333;
+}
+
+/* Add some padding for the skill text */
+#skills-list li span {
+  flex: 1; /* Make it take up available space */
+  padding-right: 10px;
+}
+
+/* Buttons styling */
+button {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button#save-btn,
+button#add-skill-btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button#save-btn:hover,
+button#add-skill-btn:hover {
+  background-color: #0056b3;
+}
